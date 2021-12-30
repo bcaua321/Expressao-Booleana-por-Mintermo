@@ -1,12 +1,11 @@
-const  transforma  = require('./equacao');
-const  read  = require('./lendoArquivo');
+const transforma  = require('./equacao');
+const leitura  = require('./lendoArquivo');
 
 const caminho = process.argv;
 
 async function processaTexto(path){
-  const arrayInput = await read(path[2]);
+  const arrayInput = await leitura(path[2]);
   const array = await transforma(arrayInput);
-
   console.log(array);
 } 
 

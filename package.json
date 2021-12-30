@@ -1,0 +1,26 @@
+{
+  "name": "automatos_2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "cli.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bcaua321/atividade-automatos.git"
+  },
+  "keywords": [
+    "Tabela Verdade",
+    "Equação Booleana Por Mintermos"
+  ],
+  "author": "Breno Prestes",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bcaua321/atividade-automatos/issues"
+  },
+  "homepage": "https://github.com/bcaua321/atividade-automatos#readme",
+  "dependencies": {
+    "chalk": "4.0"
+  }
+}

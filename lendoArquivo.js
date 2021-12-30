@@ -1,13 +1,19 @@
-const fs = require('fs'); 
+const fs = require('fs');
+const { colunas } = require('./tabelaVerdade/tabela');
+const  trataErroExt  = require('./err/erroExt');
+const trataErroValor  = require('./err/erroValor');
+const trataErroLeitura = require('./err/erroLeitura');
 
-async function read(path){
+async function leitura(path){
   const encoding = 'utf-8';
-  
+  trataErroExt(path);
   try {
     const data = await fs.promises.readFile(path, encoding)
-    return bin(data);
+    const a = bin(data);
+    if(typeof a === 'string') trataErroValor(); 
+    return a;
   } catch (err) {
-    console.error(err);
+    trataErroLeitura();
   }
 }
 
@@ -18,7 +24,11 @@ function bin(n){
   while((temp = myRegex.exec(n)) != null){
     arrayResults.push(parseInt(temp[0]));
   }
-  return arrayResults.length === 0 ? 'Não foram encontradas': arrayResults;
+
+  let verifica = colunas(arrayResults);
+  if(verifica[1] === false) 
+    return '';
+  return arrayResults;
 }
 
-module.exports = read;
+module.exports = leitura;

@@ -1,8 +1,8 @@
 function table(n){
   let array = []; // Array final
   let aux = n.length; // Para auxiliar no preenchimento da tabela 
-  let arrayAux = []; // Para preencher a tabela 
-  let simb = colunas(n); // Verifica a quantidade de colunas da tabela
+  let arrayAux = []; // Para preencher a tabela de
+  let simb = colunas(n); // Verifica a quantidade de colunas da tabela [quantidade, boolean(caso seja uma tabela válida)]
   if(simb[1]){
     for(let j = 0; j < simb[0]; j++){
       for(let i in n){
@@ -28,6 +28,7 @@ function table(n){
   return array;
 }
 
+// Função que irá retornar a quantidade de letras necessárias para fazer a montagem da equação a partir do número de colunas
 function colunas(n) {
   for(let i = 1; i <= (n.length / 2); i++){
     if(2**i === n.length){
