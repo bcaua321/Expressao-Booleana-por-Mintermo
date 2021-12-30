@@ -1,5 +1,5 @@
 <h2 align="center">Expressão Booleana a partir de mintermos</h2>
-<p align="center"> Um app CLI feito em NodeJS, cujo o objetivo é ler um arquivo ".txt" que contém a saída de uma tabela verdade e retornar uma expressão booleana a partir de [mintermos](https://pt.wikipedia.org/wiki/Mintermo_e_Maxtermo).</p>
+<p align="center"> Um app CLI feito em NodeJS, cujo o objetivo é ler um arquivo ".txt" que contém a saída de uma tabela verdade e retornar uma expressão booleana a partir de <a href="https://pt.wikipedia.org/wiki/Mintermo_e_Maxtermo">mintermos</a>.</p>
 
 ### Rodando a aplicação
 
