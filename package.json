@@ -1,7 +1,7 @@
 {
   "name": "automatos_2",
   "version": "1.0.0",
-  "description": "",
+  "description": "Um programa básico para a construção de uma expressão boleana a partir de mintermos",
   "main": "cli.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
