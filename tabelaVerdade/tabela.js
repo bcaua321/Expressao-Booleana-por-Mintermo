@@ -5,16 +5,14 @@ function table(n){
   let simb = colunas(n); // Verifica a quantidade de colunas da tabela [quantidade, boolean(caso seja uma tabela válida)]
   if(simb[1]){
     for(let j = 0; j < simb[0]; j++){
-      for(let i in n){
-        while(arrayAux.length != n.length){
-          let k; 
-          for(k = 0; k < aux / 2; k++){  // 4, 2, 1
-            arrayAux.push(0);
-          }
+      while(arrayAux.length != n.length){
+        let k; 
+        for(k = 0; k < aux / 2; k++){  // 4, 2, 1
+          arrayAux.push(0);
+        }
   
-          for(; k < aux; k++){ // 8, 4, 2
-            arrayAux.push(1);
-          }
+        for(; k < aux; k++){ // 8, 4, 2
+          arrayAux.push(1);
         }
       }
       array.push(arrayAux);

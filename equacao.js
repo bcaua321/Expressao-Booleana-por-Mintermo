@@ -16,7 +16,7 @@ function transformaParaEquacao(n){
 }
 
 function caractersNecessarios(n){
-  const a = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N'];
+  const a = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q'];
   return a.splice(0, n[0]);
 }
 
