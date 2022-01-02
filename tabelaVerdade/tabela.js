@@ -1,8 +1,10 @@
+const trataErroValor = require('../err/erroValor');
 function table(n){
   let array = []; // Array final
   let aux = n.length; // Para auxiliar no preenchimento da tabela 
   let arrayAux = []; // Para preencher a tabela de
   let simb = colunas(n); // Verifica a quantidade de colunas da tabela [quantidade, boolean(caso seja uma tabela válida)]
+  
   if(simb[1]){
     for(let j = 0; j < simb[0]; j++){
       while(arrayAux.length != n.length){
@@ -20,7 +22,7 @@ function table(n){
       aux = aux / 2; // 4, 2
     }
   } else {
-    return 'Não foi possivel fazer a tabela verdade'; // Se a tabela não corresponder à 2**i = n
+    trataErroValor(); // Se a tabela não corresponder à 2**i = n
   }
 
   return array;

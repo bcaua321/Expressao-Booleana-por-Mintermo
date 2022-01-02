@@ -10,7 +10,6 @@ async function leitura(path){
   try {
     const data = await fs.promises.readFile(path, encoding)
     const a = bin(data);
-    if(typeof a === 'string') trataErroValor(); 
     return a;
   } catch (err) {
     trataErroLeitura();
@@ -24,10 +23,7 @@ function bin(n){
   while((temp = myRegex.exec(n)) != null){
     arrayResults.push(parseInt(temp[0]));
   }
-
-  let verifica = colunas(arrayResults);
-  if(verifica[1] === false) 
-    return '';
+  
   return arrayResults;
 }
 
