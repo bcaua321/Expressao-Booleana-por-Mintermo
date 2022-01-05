@@ -16,6 +16,7 @@ async function leitura(path){
   }
 }
 
+// função para procurar 0 e 1 no arquivo
 function bin(n){
   let myRegex = /[0-1]/g;
   let arrayResults = [];
