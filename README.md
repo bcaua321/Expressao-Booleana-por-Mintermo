@@ -18,8 +18,8 @@ $ cd Expressao-Booleana-por-Mintermo
 # Instale as dependências
 $ npm install
 
-# Você pode criar uma pasta para os arquivos de input
-# Execute a aplicação 
-$ npm run app <diretório_do_aquivo/file.txt>
+# Você pode criar uma pasta para os arquivos de input 
+# Execute a aplicação
+$ npm run app diretório_do_aquivo/file.txt
 ```
 
